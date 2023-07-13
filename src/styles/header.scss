@@ -1,0 +1,82 @@
+.header {
+  background-image: url(../images/back_small2.png), url(../images/back_small.png), url(../images/city.png);
+  background-size: contain, аuto, cover;
+  background-position: 0 0, 0 0, bottom;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  height: 100vh;
+  min-height: fit-content;
+  padding-top: 25px;
+  padding-left: 5px;
+  animation: zoom-out 3s linear forwards;
+
+  @keyframes zoom-out {
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  &__top {
+    height: 60px;
+    padding-top: 63px;
+    padding-right: 180px;
+    padding-left: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 755px;
+    display: flex;
+
+  }
+
+  &__text {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: $color-grey;
+    line-height: 28px;
+    margin-bottom: 30px;
+    }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &-watch {
+      padding-left: 20px;
+      font-size: 16px;
+      font-family: "Poppins";
+      color: $color-blue;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(120%);
+      }
+    }
+  }
+
+  &__right {
+    padding-left: 50px;
+    margin-top: -150px;
+    width: 50px;
+  }
+
+  &__phone {
+    height: 80%;
+  }
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 60px;
+    font-family: "Poppins";
+    color: $color-deepblue;
+    font-weight: bold;
+}
+

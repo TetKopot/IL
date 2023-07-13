@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 45px;
+  font-family: inherit;
+  color: $color-white;
+  background-color: $color-blue;
+  border-radius:  25px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: bold;
+ }

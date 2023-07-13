@@ -1,13 +1,151 @@
+<!-- #region head -->
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>AppLab</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicon.ico"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital, wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="./scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <!-- endregion -->
+  <body class="page__body">
+    <header class="header">
+      <div class="header__top">
+        <a href="#" class="logo">
+          <img
+            src="images/AppLab.png"
+            alt="AppLab logo"
+            class="logo__image"
+          >
+        </a>
+
+        <nav class="nav menu">
+          <ul class="nav__list menu__content">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item menu__item">
+              <a href="#key-features" class="nav__link">Key Features</a>
+            </li>
+
+            <li class="nav__item menu__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+
+            <li class="nav__item menu__item">
+              <a href="#testiminial" class="nav__link">Testiminial</a>
+            </li>
+
+            <li class="nav__item menu__item">
+              <a href="#faq" class="nav__link">FAQ</a>
+            </li>
+
+            <a href="#menu">
+              <button
+                type="button"
+                class="burger__menu"
+              >
+
+              </button>
+            </a>
+
+          </ul>
+
+
+
+          <a href="#try">
+            <button
+            type="button"
+            class="button nav__link"
+          >
+            Try for free
+            </button>
+          </a>
+
+
+        </nav>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__left">
+          <img src="images/ChoiceApp.png" alt="choice-app">
+          <h1>Best app for your modern lifestyle</h1>
+          <p class="header__text">
+            Increase productivity with a simple to-do app. app for
+            <br>
+            managing your personal budgets.
+          </p>
+
+          <div class="header__links">
+            <a href="#try">
+              <button
+                type="button"
+                class="button nav__link"
+              >
+                Try for free
+              </button>
+            </a>
+
+            <a href="#try" class="header__links-watch">
+              Watch demo video
+            </a>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <img
+            src="images/phone1.png"
+            alt="app-illustration"
+            class="header__phone"
+          >
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <section id="key-features" class="section">
+        <h2>Awesome apps features</h2>
+      </section>
+
+      <section id="pricing" class="section">
+        <h2>Get awesome features, whithout extra charges</h2>
+      </section>
+
+      <section id="testiminial" class="section">
+        <h2>Meet Client Satisfaction by using product</h2>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>Frequently asked questions</h2>
+      </section>
+
+      <section id="try" class="section">
+        <h2>Download our App now !</h2>
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

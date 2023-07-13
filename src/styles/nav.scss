@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: none;
+
+    @include notMobile {
+      display: flex;
+      color: $color-deepblue;
+      padding-right: 20px;
+      padding-left: 0;
+      font-size: 16px;
+      font-family: "Poppins";
+      color: rgb(36, 47, 81);
+    }
+  }
+
+  &__link {
+    color: $color-deepblue;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(120%);
+    }
+  }
+}

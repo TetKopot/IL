@@ -1,7 +1,14 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/_normalize.scss";
+@import "./utils/_mixins.scss";
+@import "./utils/_vars.scss";
+@import "./utils/_reset.scss";
 
-body {
-  background: $c-gray;
-}
+@import "./header.scss";
+@import "./page.scss";
+@import "./logo.scss";
+@import "./nav.scss";
+@import "./button.scss";
+@import "./section.scss";
+@import "./burger.scss";
+@import "./menu.scss";
+

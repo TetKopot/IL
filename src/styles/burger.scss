@@ -1,0 +1,19 @@
+.burger__menu {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/burger-menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: 0.5px solid black;
+
+  @include notMobile {
+    display: none;
+  }
+
+}
