@@ -38,11 +38,11 @@
 
   &__text {
     font-size: 18px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     color: $color-grey;
     line-height: 28px;
     margin-bottom: 30px;
-    }
+  }
 
   &__links {
     display: flex;
@@ -51,7 +51,7 @@
     &-watch {
       padding-left: 20px;
       font-size: 16px;
-      font-family: "Poppins";
+      font-family: "Poppins", sans-serif;
       color: $color-blue;
       transition: transform 0.3s;
 
@@ -73,10 +73,10 @@
 }
 
 h1 {
-    margin: 10px 0;
-    font-size: 60px;
-    font-family: "Poppins";
-    color: $color-deepblue;
-    font-weight: bold;
+  margin: 10px 0;
+  font-size: 60px;
+  font-family: "Poppins";
+  color: $color-deepblue;
+  font-weight: bold;
 }
 
