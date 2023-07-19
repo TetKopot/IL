@@ -1,3 +1,11 @@
 .page {
   scroll-behavior: smooth;
+
+  &__body {
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
 }
+
+

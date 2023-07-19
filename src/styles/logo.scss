@@ -1,6 +1,18 @@
 .logo {
   &__image {
     display: block;
-    height: 30px;
+    height: 20px;
+
+    @include onTablet {
+      height: 22px;
+    }
+
+    @include onBigTablet {
+      height: 25px;
+    }
+
+    @include onDesktop {
+      height: 30px;
+    }
   }
 }

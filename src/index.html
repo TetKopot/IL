@@ -1,4 +1,3 @@
-<!-- #region head -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +11,14 @@
       href="./images/favicon.ico"
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital, wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+      crossorigin
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="./scripts/main.js" defer></script>
   </head>
-  <!-- endregion -->
   <body class="page__body">
     <header class="header">
       <div class="header__top">
@@ -30,25 +30,25 @@
           >
         </a>
 
-        <nav class="nav menu">
-          <ul class="nav__list menu__content">
+        <nav class="nav">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Home</a>
             </li>
 
-            <li class="nav__item menu__item">
+            <li class="nav__item">
               <a href="#key-features" class="nav__link">Key Features</a>
             </li>
 
-            <li class="nav__item menu__item">
+            <li class="nav__item">
               <a href="#pricing" class="nav__link">Pricing</a>
             </li>
 
-            <li class="nav__item menu__item">
+            <li class="nav__item">
               <a href="#testiminial" class="nav__link">Testiminial</a>
             </li>
 
-            <li class="nav__item menu__item">
+            <li class="nav__item">
               <a href="#faq" class="nav__link">FAQ</a>
             </li>
 
@@ -57,13 +57,10 @@
                 type="button"
                 class="burger__menu"
               >
-
               </button>
             </a>
 
           </ul>
-
-
 
           <a href="#try">
             <button
@@ -73,8 +70,29 @@
             Try for free
             </button>
           </a>
+        </nav>
+        <nav class="menu">
+          <ul class="menu__content">
+            <li class="menu__item">
+              <a href="/" class="menu__link">Home</a>
+            </li>
 
+            <li class="menu__item">
+              <a href="#key-features" class="menu__link">Key Features</a>
+            </li>
 
+            <li class="menu__item">
+              <a href="#pricing" class="menu__link">Pricing</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#testiminial" class="menu__link">Testiminial</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#faq" class="menu__link">FAQ</a>
+            </li>
+          </ul>
         </nav>
       </div>
 
@@ -103,45 +121,209 @@
             </a>
           </div>
         </div>
-
-        <div class="header__right">
-          <img
-            src="images/phone1.png"
-            alt="app-illustration"
-            class="header__phone"
-          >
-        </div>
       </div>
 
     </header>
 
     <main>
       <section id="key-features" class="section">
-        <h2>Awesome apps features</h2>
+        <div class="section__companies">
+          <h5 class="section__companies-text">
+            Trusted by companies like
+          </h5>
+          <div class="section__companies-logos">
+            <img
+              src="images/company1.png"
+              alt="Southwest logo"
+              class="section__image"
+            >
+            <img
+              src="images/company2.png"
+              alt="Anubis logo"
+              class="section__image"
+            >
+            <img
+              src="images/company3.png"
+              alt="Alonzo logo"
+              class="section__image"
+            >
+            <img
+              src="images/company4.png"
+              alt="Express logo"
+              class="section__image"
+            >
+            <img
+              src="images/company5.png"
+              alt="Maniac logo"
+              class="section__image"
+            >
+          </div>
+        </div>
+        <div class="section__features">
+          <h2 class="section__features-title">Awesome apps
+            <br> features
+          </h2>
+          <p class="section__features-text">
+            Increase productivity with a simple to-do app. app for
+            <br> managing your personal budgets.
+          </p>
+
+          <div class="section__features-explain">
+            <p class="section__features-name">
+              Fast Performance
+            </p>
+            <div class="img-container">
+              <img
+              src="images/speed.png"
+              alt="speed"
+              class="red"
+            >
+            </div>
+            <p class="section__features-about">
+              Get your blood tests delivered at
+              <br>
+              home collect a sample from the
+              <br>
+              news your blood tests.
+            </p>
+
+            <p class="section__features-name">
+              Prototyping
+            </p>
+            <div class="img-container">
+              <img
+                src="images/prototyping.png" alt="speed"
+                class="blue"
+              >
+            </div>
+
+            <p class="section__features-about">
+              Get your blood tests delivered at
+              <br>
+              home collect a sample from the
+              <br>
+              news your blood tests.
+            </p>
+
+            <p class="section__features-name">
+              Vector Editing
+            </p>
+            <div class="img-container">
+              <img
+                src="images/vector.png"
+                alt="speed"
+                class="green"
+              >
+            </div>
+
+            <p class="section__features-about">
+              Get your blood tests delivered at
+              <br>
+              home collect a sample from the
+              <br>
+              news your blood tests.
+            </p>
+          </div>
+
+          <div class="section__features-jackpots">
+            <p class="section__features-jackpots--title">
+              Smart jackpots that
+              <br>
+              you may love this
+              <br>
+              anytime & anywhere
+            </p>
+            <p class="section__features-jackpots--text">
+              The rise of mobile devices transforms the way we
+              <br>
+              consume information entirely and the world's most
+              <br>
+              elevant channels such as Facebook.
+            </p>
+          </div>
+          <div class="section__features-jackpots--container">
+            <img
+              src="images/jackpots.png"
+              alt="jackpots--img"
+              class="section__features-jackpots--img"
+            >
+          </div>
+          <div class="section__features-jackpots--container">
+            <img
+              src="images/Designed.png"
+              alt="jackpots--img"
+              class="section__features-jackpots--img"
+            >
+          </div>
+          <div class="section__features-jackpots--container">
+            <img
+              src="images/Why.png"
+              alt="jackpots--img"
+              class="section__features-jackpots--img"
+            >
+          </div>
+          <div class="section__features-jackpots--container">
+            <img
+              src="images/Ultimate.png"
+              alt="jackpots--img"
+              class="section__features-jackpots--img"
+            >
+          </div>
+        </div>
       </section>
 
-      <section id="pricing" class="section">
-        <h2>Get awesome features, whithout extra charges</h2>
+      <section id="pricing" class="section__pricing">
+        <div class="section__pricing--container">
+          <img
+            src="images/сharges.png"
+            alt="jackpots--img"
+            class="section__pricing--img"
+          >
+        </div>
       </section>
 
-      <section id="testiminial" class="section">
-        <h2>Meet Client Satisfaction by using product</h2>
+      <section id="testiminial" class="section__testimonial">
+        <div class="section__testimonial--container">
+          <img
+            src="images/Testimonila.png"
+            alt="jackpots--img"
+            class="section__testimonial--img"
+          >
+        </div>
       </section>
 
-      <section id="faq" class="section">
-        <h2>Frequently asked questions</h2>
+      <section id="faq" class="section__faq">
+        <div class="section__faq--container">
+          <img
+            src="images/FAQ.png"
+            alt="jackpots--img"
+            class="section__faq--img"
+          >
+        </div>
       </section>
 
-      <section id="try" class="section">
-        <h2>Download our App now !</h2>
+      <section id="try" class="section__try">
+        <div class="section__try--container">
+          <img
+            src="images/try.png"
+            alt="jackpots--img"
+            class="section__try--img"
+          >
+        </div>
       </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+      <div class="footer--container">
+        <img
+          src="images/Footer.png"
+          alt="jackpots--img"
+          class="footer--img"
+        >
+      </div>
     </footer>
 
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
