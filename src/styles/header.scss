@@ -1,25 +1,16 @@
 .header {
-  background-image: url(../images/phone1.png), url(../images/back_small2.png), url(../images/back_small.png), url(../images/city.png);
-  background-size: auto 35%, 200% auto, 100% auto, auto auto;
-  background-position: bottom 5% right 50%, top 1% center, top 30% left 1%, bottom;
+  background-image: url(../images/back_small2.webp), url(../images/back_small.webp), url(../images/city.webp);
+  background-size: 200% auto, 100% auto, auto auto;
+  background-position: top 1% center, top 30% left 1%, bottom;
   background-repeat: no-repeat;
   height: 100vh;
   min-height: fit-content;
-  animation: zoom-out 3s linear forwards;
-
-  @keyframes zoom-out {
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+  position: relative;
 
   @include notMobile {
     padding-top: 25px;
-    background-size: 32% auto, 110% auto, 50% auto, 100% auto;
-    background-position: bottom 20% right 10%, top 1% center, top 30% left 1%, bottom;
+    background-size: 110% auto, 50% auto, 100% auto;
+    background-position: top 1% center, top 30% left 1%, bottom;
   }
 
   &__top {
@@ -40,14 +31,12 @@
 
     @include onTablet {
       padding-top: 63px;
-      padding-right: 250px;
       padding-left: 70px;
     }
 
     @include onBigTablet {
       padding-top: 63px;
-      padding-right: 180px;
-      padding-left: 100px;
+      padding-left: 70px;
     }
 
     @include onDesktop {
@@ -58,23 +47,9 @@
   }
 
   &__bottom {
-    padding-top: 15%;
     padding-left: 10%;
-    width: 355px;
+    width: 100vw;
     display: flex;
-
-    @include onTablet {
-      width: 555px;
-    }
-
-    @include onBigTablet {
-      width: 655px;
-    }
-
-    @include onDesktop {
-      width: 755px;
-    }
-
   }
 
   &__text {
@@ -99,10 +74,15 @@
 
   &__links {
     display: flex;
+    flex-direction: column;
     align-items: center;
 
+    @include notMobile {
+      flex-direction: row;
+    }
+
     &-watch {
-      padding-left: 20px;
+      padding-top: 20px;
       font-size: 16px;
       font-family: "Poppins", sans-serif;
       color: $color-blue;
@@ -111,38 +91,70 @@
       &:hover {
         transform: scale(120%);
       }
+
+      @include notMobile {
+        padding-left: 20px;
+        padding-top: 0;
+      }
     }
   }
 
-  &__right {
-    margin: -50px auto ;
-    width: 50px;
-  }
-
-  &__phone {
-    max-height: 80%;
-    max-width: 250px;
+  &__left {
+    padding-top: 15%;
+    width: 55%;
 
     @include onTablet {
-      max-width: 280px;
+      width: 60%;
     }
 
     @include onBigTablet {
-      max-width: 300px;
+      width: 100%;
     }
 
     @include onDesktop {
-      max-width: 350px;
+      width: 115%;
+    }
+
+  }
+
+  &__right {
+    width: 100%;
+    margin-bottom: -25%;
+    margin-right: 5%;
+    background-image: url(../images/phone1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: zoom-out 3s linear forwards;
+
+    @include notMobile {
+      background-position: bottom right;
+    }
+
+    @include onDesktop {
+      margin-bottom: -15%;
+      margin-right: 15%;
     }
   }
 }
 
 h1 {
   margin: 10px 0;
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 1.25;
   font-family: "Poppins";
   color: $color-deepblue;
   font-weight: bold;
+  animation: zoom-out 3s linear forwards;
+
+  @keyframes zoom-out {
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
   @include onTablet {
     font-size: 50px;

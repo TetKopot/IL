@@ -1,5 +1,4 @@
 .menu {
-  // overflow-x: hidden;
   right: 0;
   left: 0;
   top: 3px;
@@ -11,6 +10,7 @@
   background-color: rgb(211, 171, 211);
   display: flex;
   justify-content: center;
+
 
   @include notMobile {
     display: none;
