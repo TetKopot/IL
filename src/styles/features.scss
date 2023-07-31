@@ -1,0 +1,300 @@
+.features{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin-top: 40px;
+
+  @include notMobile {
+    margin-top: 70px;
+  }
+
+  &__illustration {
+    background-image: url(../images/feature_img.webp);
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    color: $color-deepblue;
+    font-weight: bold;
+    line-height: 1.278;
+    margin-bottom: 0;
+
+    @include notMobile {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    color: $color-grey;
+    line-height: 1.625;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+    @include notMobile {
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  }
+
+  &__explain {
+
+    &--line {
+      width: 2px;
+      height: 8em;
+      background-color: #f4f4f4;
+    }
+
+    &-jackpots--container {
+      margin: 50px 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      @include notMobile {
+        margin: 100px 50px;
+      }
+    }
+  }
+
+  &__details {
+
+    width: 100%;
+
+    &-jackpots {
+      display: flex;
+      flex-direction: row;
+      margin: 0 20px;
+      justify-content: space-around;
+
+      @include notMobile {
+        margin: 50px 50px;
+      }
+    }
+
+    &-why {
+
+      &--first,
+      &--second {
+        margin: 30px auto;
+
+        @include notMobile {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+    }
+
+    &-performance,
+    &-prototyping,
+    &-vector {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-payouts,
+    &-network,
+    &-reward {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-choose {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 300px;
+      margin: 20px 10px;
+    }
+
+    &-text {
+      margin-right: 20px;
+      margin-left: 10px;
+      &--about {
+        font-size: 12px;
+        font-family: "Poppins";
+        color: $color-grey;
+        text-align: justify;
+        line-height: 1.625;
+        margin: 0;
+
+        @include notMobile {
+          font-size: 16px;
+        }
+      }
+
+      &--name {
+        font-size: 20px;
+        font-family: "Poppins";
+        font-weight: bold;
+        margin-top: 20px;
+
+        &.fast {
+          color: $color-red;
+        }
+
+        &.proto {
+          color: $color-blue;
+        }
+
+        &.vector {
+          color: $color-green;
+        }
+      }
+  }
+
+    &-img {
+      display: flex;
+      height: 80px;
+      min-width: 80px;
+      margin: auto;
+      margin-left: 0;
+      border: 1px solid transparent;
+      border-radius: 50%;
+
+      &.red {
+        background-color: #ffecef;
+      }
+
+      &.blue {
+        background-color: #f4f4ff;
+      }
+
+      &.green {
+        background-color: #e4ffee;
+      }
+
+      &.purple {
+        background-color: #f4f4ff;
+      }
+
+      &.yellow {
+        background-color: #fff6d3;
+      }
+
+      &.orange {
+        background-color: #fdeee4;
+      }
+    }
+  }
+}
+
+img.red,
+img.blue,
+img.green {
+  margin: auto;
+}
+
+
+.design {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin: 20px 20px;
+
+  @include notMobile {
+    margin: 50px 20px;
+  }
+
+  &--illustration {
+    background-image: url(../images/design.webp);
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--explain {
+     padding: 20px;
+     width: 50%;
+
+     @include notMobile {
+      padding: 80px 20px;
+     }
+  }
+}
+
+hr {
+  color: #f4f4f4;
+  height: 1px;
+  opacity: 0.439;
+  height: 2px;
+}
+
+.choose {
+  margin-top: 50px;
+  text-align: center;
+
+  @include notMobile {
+    margin-top: 100px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-deepblue;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+}
+
+.built {
+
+  @include notMobile {
+    display: flex;
+  }
+
+
+  &__illustration {
+    background-image: url(../images/phone3.webp);
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include notMobile {
+      width: 50%;
+      height: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__explain {
+    padding: 20px 10px 20px 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+
+    @include notMobile {
+      padding: 80px 10px 80px 80px;
+      width: 50%;
+    }
+  }
+
+  &__elem {
+    max-width: 300px;
+    margin:  20px auto;
+  }
+
+  &__button {
+    margin: auto;
+
+    @include notMobile {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.testimonial{
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include notMobile {
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  &__img {
+    background-image: url(../images/People.webp);
+    height: 300px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include notMobile {
+      width: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__explain {
+    margin: auto;
+
+    @include notMobile {
+      align-items: start;
+      width: 50%;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__review {
+
+    &-title {
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(36, 47, 81);
+      font-weight: bold;
+    }
+
+    &-stars {
+      background-image: url(../images/star.webp);
+      height: 20px;
+      background-repeat: no-repeat;
+      margin-top: 45px;
+    }
+
+    &-client {
+      display: flex;
+      margin-top: 50px;
+      align-items: center;
+      justify-content: space-between;
+
+      &--img {
+        margin: auto 0;
+        margin-right: 20px;
+      }
+
+      &--name {
+        font-size: 18px;
+        font-family: "Poppins";
+        color: rgb(36, 47, 81);
+        font-weight: bold;
+        margin: 0;
+      }
+
+      &--position {
+        font-size: 18px;
+        font-family: "Poppins";
+        color: rgb(97, 99, 104);
+        margin: 0;
+      }
+    }
+
+    &-arrow {
+      display: flex;
+      margin: auto;
+      margin-right: 70px;
+
+      &--left,
+      &--right {
+        border: 1px solid #eff3f8;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: #eff3f8;
+        }
+      }
+
+      &--divide {
+        width: 2px;
+        background-color: #eff3f8;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 10px;
+      }
+    }
+  }
+}
+
+

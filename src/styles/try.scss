@@ -1,0 +1,50 @@
+.try {
+  display: flex;
+  flex-direction: column;
+
+  @include notMobile {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  &__img {
+    background-image: url(../images/try.webp);
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include notMobile {
+      width: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__explain {
+    margin: 50px auto;
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @include notMobile {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-right: 20px;
+
+    &-img {
+      height: 50px;
+      width: auto;
+      margin-right: 20px;
+    }
+  }
+}

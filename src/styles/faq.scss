@@ -1,0 +1,105 @@
+.faq {
+  &__top {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 50px;
+
+    &-title {
+      font-size: 20px;
+      font-family: "Poppins";
+      color: rgb(36, 47, 81);
+      font-weight: bold;
+    }
+
+    &-text {
+      font-size: 16px;
+      font-family: "Poppins";
+      color: rgb(97, 99, 104);
+    }
+  }
+}
+
+.container {
+  max-width: 80%;
+  position: relative;
+  margin: 2em auto;
+  margin-bottom: 80px;
+
+  @include notMobile {
+    max-width: 70%;
+  }
+}
+
+label {
+  display: block;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.title {
+  padding: 10px;
+  position: relative;
+  z-index: 599;
+  background: #f5f7fa;
+
+  @include notMobile {
+    padding: 1em 3em;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.content {
+  position: relative;
+  padding: 0;
+  padding-left: 10px;
+  max-height: 0px;
+  margin: 0;
+  background-color: #f5f7fa;
+
+  @include notMobile {
+    padding-left: 3rem;
+  }
+
+  & p {
+    position: relative;
+    padding: 1.2em 3em;
+    margin: 0;
+    opacity: 0;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .title .plus {
+display: none;
+}
+
+input[type="checkbox"]:checked + .title + .content {
+  max-height: 555px;
+}
+
+input[type="checkbox"]:checked + .title + .content p {
+  opacity: 1;
+}
+
+.plus {
+  float: right;
+  display: inline-block;
+}
+
+
+

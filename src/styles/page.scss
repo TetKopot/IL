@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
 
   &__body {
+    overflow-x: hidden;
     &--with-menu {
       overflow: hidden;
     }

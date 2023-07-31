@@ -1,0 +1,198 @@
+.pricing {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+
+    @include notMobile {
+      margin: 60px 0 50px 0;
+    }
+  }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+
+      @include notMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 70px;
+        align-items:flex-start;
+      }
+    }
+}
+
+.switch-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  padding: 4px;
+  border: 1px solid lightgrey;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  background: $color-white;
+}
+.switch-wrapper [type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+  color: $color-white;
+  font-size: 16px;
+  font-family: "Poppins";
+  line-height: 2.75;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+  background: transparent;
+}
+.switch-wrapper
+  [type="radio"]:checked#monthly
+  + label[for="yearly"]
+  ~ .highlighter {
+  transform: none;
+}
+.switch-wrapper
+  [type="radio"]:checked#yearly
+  + label[for="monthly"]
+  ~ .highlighter {
+  transform: translateX(100%);
+}
+.switch-wrapper label {
+  font-size: 16px;
+  color: $color-grey;
+  text-align: center;
+  margin: auto 0;
+  z-index: 1;
+  min-width: 150px;
+  line-height: 2.75;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: color 0.3s ease-in-out;
+
+}
+.switch-wrapper label:hover {
+  background: gainsboro;
+}
+.switch-wrapper .highlighter {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background: $color-blue;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card {
+  padding-bottom: 25px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin: 10px 20px;
+  box-shadow: 10px 20px 30px rgba(#999ca5, 0.2);
+  border-radius: 5px;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+
+  @include notMobile {
+    margin: 0 20px;
+  }
+
+  &__top {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient($color-white, #f4f7f9);
+  }
+
+  &__price {
+    font-size: 60px;
+    font-family: "Poppins";
+    color: rgb(36, 47, 81);
+    font-weight: bold;
+    line-height: 0.967;
+    text-align: center;
+    margin: 60px 0 25px 0;
+  }
+
+  &__period {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(153, 156, 165);
+    line-height: 1.556;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: "Poppins";
+    color: rgb(36, 47, 81);
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__purpose {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Poppins";
+    color: rgb(153, 156, 165);
+    line-height: 1.75;
+    text-align: center;
+  }
+
+  &__bottom {
+    font-size: 16px;
+    font-family: "Poppins";
+    color: rgb(153, 156, 165);
+    line-height: 3;
+    text-align: center;
+  }
+
+  &__trial {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: rgb(37, 0, 249);
+    line-height: 1.75;
+    text-align: center;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+
+  }
+
+  &:hover {
+   border: 2px solid gainsboro;
+   border-radius: 5px;
+   box-shadow: none;
+   transition: box-shadow 0.3s ease-in-out;
+
+  }
+
+  &:hover .card__trial {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover .card__top{
+    background: linear-gradient(#fdfdfe, #f4f7f9);
+  }
+}
+
+.hide {
+  display: none;
+}

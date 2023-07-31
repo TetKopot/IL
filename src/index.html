@@ -15,10 +15,25 @@
       crossorigin
     >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick/slick.css"
+    >
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick/slick-theme.css"
+    >
+
     <script src="./scripts/main.js" defer></script>
   </head>
+
   <body class="page__body">
     <header class="header">
       <div class="header__top">
@@ -162,81 +177,112 @@
             >
           </div>
         </div>
-        <div class="section__features">
-          <h2 class="section__features-title">Awesome apps
-            <br> features
-          </h2>
-          <p class="section__features-text">
-            Increase productivity with a simple to-do app. app for
-            <br> managing your personal budgets.
-          </p>
-
-          <div class="section__features-explain">
-            <p class="section__features-name">
-              Fast Performance
-            </p>
-            <div class="img-container">
-              <img
-              src="images/speed.webp"
-              alt="speed"
-              class="red"
-            >
-            </div>
-            <p class="section__features-about">
-              Get your blood tests delivered at
-              <br>
-              home collect a sample from the
-              <br>
-              news your blood tests.
-            </p>
-
-            <p class="section__features-name">
-              Prototyping
-            </p>
-            <div class="img-container">
-              <img
-                src="images/prototyping.webp" alt="speed"
-                class="blue"
-              >
-            </div>
-
-            <p class="section__features-about">
-              Get your blood tests delivered at
-              <br>
-              home collect a sample from the
-              <br>
-              news your blood tests.
-            </p>
-
-            <p class="section__features-name">
-              Vector Editing
-            </p>
-            <div class="img-container">
-              <img
-                src="images/vector.webp"
-                alt="speed"
-                class="green"
-              >
-            </div>
-
-            <p class="section__features-about">
-              Get your blood tests delivered at
-              <br>
-              home collect a sample from the
-              <br>
-              news your blood tests.
-            </p>
+        <div class="features">
+          <div class="features__illustration">
           </div>
 
-          <div class="section__features-jackpots">
-            <p class="section__features-jackpots--title">
-              Smart jackpots that
-              <br>
-              you may love this
-              <br>
-              anytime & anywhere
+          <div class="features__explain">
+            <div data-aos="zoom-in">
+              <h2 class="features__title">Awesome apps
+                <br> features
+              </h2>
+            </div>
+            <p class="features__text">
+              Increase productivity with a simple to-do app. app for
+              <br> managing your personal budgets.
             </p>
-            <p class="section__features-jackpots--text">
+
+            <div class="features__details">
+              <div data-aos="fade-left">
+                <div class="features__details-performance">
+                  <div class="features__details-img red">
+                    <img
+                      src="images/speed.webp"
+                      alt="speed"
+                      class="red"
+                    >
+                  </div>
+                  <div class="features__details-text">
+                    <p class="features__details-text--name fast">
+                      Fast Performance
+                    </p>
+
+                    <p class="features__details-text--about">
+                      Get your blood tests delivered at
+                      <br>
+                      home collect a sample from the
+                      <br>
+                      news your blood tests.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="fade-left">
+                <div class="features__details-prototyping">
+                  <div class="features__details-img blue">
+                    <img
+                      src="images/prototyping.webp"
+                      alt="proto"
+                      class="blue"
+                    >
+                  </div>
+                  <div class="features__details-text">
+                    <p class="features__details-text--name proto">
+                      Prototyping
+                    </p>
+
+                    <p class="features__details-text--about">
+                      Get your blood tests delivered at
+                      <br>
+                      home collect a sample from the
+                      <br>
+                      news your blood tests.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div data-aos="fade-left">
+
+                <div class="features__details-vector">
+                  <div class="features__details-img green">
+                    <img
+                      src="images/vector.webp"
+                      alt="vector"
+                      class="green"
+                    >
+                  </div>
+                  <div class="features__details-text">
+                    <p class="features__details-text--name vector">
+                      Vector Editing
+                    </p>
+
+                    <p class="features__details-text--about">
+                      Get your blood tests delivered at
+                      <br>
+                      home collect a sample from the
+                      <br>
+                      news your blood tests.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__explain-jackpots">
+          <div class="features__explain-jackpots--container">
+            <div data-aos="zoom-in">
+              <h2 class="features__title">Smart jackpots that
+                <br>
+                you may love this
+                <br>
+                anytime & anywhere
+              </h2>
+            </div>
+            <div class="features__explain--line"></div>
+            <p class="features__text">
               The rise of mobile devices transforms the way we
               <br>
               consume information entirely and the world's most
@@ -244,93 +290,800 @@
               elevant channels such as Facebook.
             </p>
           </div>
-          <!-- <div class="section__features-jackpots--container">
-            <img
-              src="images/jackpots.png"
-              alt="jackpots--img"
-              class="section__features-jackpots--img"
+
+          <div class="features__details-jackpots">
+            <div data-aos="flip-left">
+              <div class="features__details-payouts">
+                <div class="features__details-img red">
+                  <img
+                    src="images/bill.webp"
+                    alt="bill"
+                    class="red"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name fast">
+                    Automatic Payouts
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="flip-left">
+
+              <div class="features__details-network">
+                <div class="features__details-img blue">
+                  <img
+                    src="images/network.webp"
+                    alt="network"
+                    class="blue"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name proto">
+                    Network Effect
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="flip-left">
+
+              <div class="features__details-reward">
+                <div class="features__details-img green">
+                  <img
+                    src="images/badge.webp"
+                    alt="reward"
+                    class="green"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name vector">
+                    Bigger Reward Method
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="design">
+          <div class="design--illustration">
+          </div>
+
+          <div class="design--explain">
+            <div data-aos="zoom-in">
+              <h2 class="features__title">Designed & built by
+                <br>
+                the latest code
+                <br>
+                integration
+              </h2>
+            </div>
+            <p class="features__text">
+              The rise of mobile devices transforms the way we
+              <br>
+              consume information entirely and the world's most
+              <br>
+              elevant channels such as Facebook.
+            </p>
+
+            <a href="#try">
+              <button
+              type="button"
+              class="button nav__link learn"
             >
-          </div> -->
-          <!-- <div class="section__features-jackpots--container">
-            <img
-              src="images/Designed.png"
-              alt="jackpots--img"
-              class="section__features-jackpots--img"
+              Learn more
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="choose">
+          <div data-aos="zoom-in">
+            <h2 class="features__title ">Why you should choose
+              <br>
+              our app
+            </h2>
+          </div>
+          <p class="features__text">The rise of mobile devices      transforms the way we consume information entirely
+            <br>
+            and the world's most elevant channels such as Facebook.
+          </p>
+
+          <div class="features__details-why">
+            <div class="features__details-why--first">
+              <div class="features__details-choose">
+                <div class="features__details-img red choose__img">
+                  <img
+                    src="images/dev.webp"
+                    alt="bill"
+                    class="red"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    App Development
+                  </p>
+
+                  <p class="features__details-text--about choose__text">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div class="features__details-choose">
+                <div class="features__details-img blue choose__img">
+                  <img
+                    src="images/award.webp"
+                    alt="network"
+                    class="blue"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    10 Times Award
+                  </p>
+
+                  <p class="features__details-text--about choose__text">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div class="features__details-choose">
+                <div class="features__details-img yellow choose__img">
+                  <img
+                    src="images/cloud.webp"
+                    alt="reward"
+                    class="green"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    Cloud Storage
+                  </p>
+
+                  <p class="features__details-text--about choose__text">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__details-why--second">
+              <div class="features__details-choose">
+                <div class="features__details-img green choose__img">
+                  <img
+                    src="images/support.webp"
+                    alt="bill"
+                    class="red"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    Customization
+                  </p>
+
+                  <p class="features__details-text--about choose__text">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div class="features__details-choose">
+                <div class="features__details-img purple choose__img">
+                  <img
+                    src="images/ux.webp"
+                    alt="network"
+                    class="blue"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    UX Planning
+                  </p>
+
+                  <p class="features__details-text--about choose__text">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div class="features__details-choose">
+                <div class="features__details-img orange choose__img">
+                  <img
+                    src="images/customer.webp"
+                    alt="reward"
+                    class="green"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    Customer Support
+                  </p>
+
+                  <p class="features__details-text--about choose__text">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="built">
+
+          <div class="built__explain">
+            <div data-aos="zoom-in">
+              <h2 class="features__title built__title">Ultimate features
+                <br>
+                that we built
+              </h2>
+            </div>
+            <p class="features__text built__text">
+              The rise of mobile devices transforms the way we
+              <br>
+              consume information entirely.
+            </p>
+
+            <div class="features__details-why--first">
+              <div class="features__details-choose built__elem">
+                <div class="features__details-img red">
+                  <img
+                    src="images/dev.webp"
+                    alt="bill"
+                    class="red"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    App Development
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+              <div class="features__details-choose built__elem">
+                <div class="features__details-img green">
+                  <img
+                    src="images/ux.webp"
+                    alt="network"
+                    class="blue"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    UX Planning
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="features__details-why--second">
+              <div class="features__details-choose built__elem">
+                <div class="features__details-img yellow">
+                  <img
+                    src="images/cloud.webp"
+                    alt="reward"
+                    class="green"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    Cloud Storage
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+
+              <div class="features__details-choose built__elem">
+                <div class="features__details-img purple">
+                  <img
+                    src="images/customer.webp"
+                    alt="reward"
+                    class="green"
+                  >
+                </div>
+                <div class="features__details-text">
+                  <p class="features__details-text--name choose__title">
+                    Customer Support
+                  </p>
+
+                  <p class="features__details-text--about">
+                    Get your blood tests delivered at
+                    <br>
+                    home collect a sample from the
+                    <br>
+                    news your blood tests.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="#try">
+              <button
+              type="button"
+              class="button nav__link learn built__button"
             >
-          </div> -->
-          <!-- <div class="section__features-jackpots--container">
-            <img
-              src="images/Why.png"
-              alt="jackpots--img"
-              class="section__features-jackpots--img"
-            >
-          </div> -->
-          <!-- <div class="section__features-jackpots--container">
-            <img
-              src="images/Ultimate.png"
-              alt="jackpots--img"
-              class="section__features-jackpots--img"
-            >
-          </div> -->
+              See all
+              </button>
+            </a>
+          </div>
+          <div class="built__illustration">
+          </div>
         </div>
       </section>
 
       <section id="pricing" class="section__pricing">
-        <!-- <div class="section__pricing--container">
-          <img
-            src="images/сharges.png"
-            alt="jackpots--img"
-            class="section__pricing--img"
-          >
-        </div> -->
+        <div class="choose">
+          <div data-aos="zoom-in">
+            <h2 class="features__title ">Get awesome features, without
+              <br>
+              extra charges
+            </h2>
+          </div>
+          <p class="features__text">The rise of mobile devices      transforms the way we consume information entirely
+            <br>
+            and the world's most elevant channels such as Facebook.
+          </p>
+        </div>
+
+        <div class="pricing__container">
+          <div class="switch-wrapper">
+            <input
+              id="monthly"
+              type="radio"
+              name="switch"
+              checked
+            >
+            <input
+              id="yearly"
+              type="radio"
+              name="switch"
+            >
+            <label for="monthly" class="button__price">Monthly</label>
+            <label for="yearly" class="button__price">Annually</label>
+            <span class="highlighter"></span>
+          </div>
+        </div>
+
+        <div class="pricing__cards">
+          <article class="card">
+            <div class="card__top">
+              <p class="card__price monthly price">
+                $0<span class="card__period">/month</span>
+              </p>
+              <p class="card__price yearly price hide">
+                $10<span class="card__period">/month</span>
+              </p>
+              <h2 class="card__title">
+                Business class
+              </h2>
+              <p class="card__purpose">
+                For small teams or office
+              </p>
+            </div>
+
+            <div class="card__bottom">
+              Drag & Drop Builder
+              <br>
+              1,000's of Templates
+              <br>
+              Blog Support Tools
+              <br>
+              eCommerce Store
+
+              <a href="#try">
+                <button
+                type="button"
+                class="button nav__link button__price built__button"
+              >
+                Start free trial
+                </button>
+              </a>
+              <a href="#try">
+                <p class="card__trial">
+                  Or Start 14 days trail
+                </p>
+              </a>
+            </div>
+
+
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <p class="card__price monthly price">
+                $99<span class="card__period">/month</span>
+              </p>
+              <p class="card__price yearly price hide">
+                $80<span class="card__period">/month</span>
+              </p>
+              <h2 class="card__title">
+                Pro Master
+              </h2>
+              <p class="card__purpose">
+                For Best opportunities
+              </p>
+            </div>
+
+            <div class="card__bottom">
+              Drag & Drop Builder
+              <br>
+              1,000's of Templates
+              <br>
+              Blog Support Tools
+              <br>
+              eCommerce Store
+
+              <a href="#try">
+                <button
+                type="button"
+                class="button nav__link button__price built__button"
+              >
+                Subscribe now
+                </button>
+              </a>
+
+              <a href="#try">
+                <p class="card__trial">
+                  Or Start 14 days trail
+                </p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <hr>
+
       </section>
 
       <section id="testiminial" class="section__testimonial">
-        <!-- <div class="section__testimonial--container">
-          <img
-            src="images/Testimonila.png"
-            alt="jackpots--img"
-            class="section__testimonial--img"
-          >
-        </div> -->
+        <div class="testimonial">
+          <div class="testimonial__img">
+          </div>
+
+          <div class="testimonial__explain">
+            <div data-aos="zoom-in">
+              <h2 class="features__title testimonial__title">Meet Client Satisfaction
+                <br>
+                by using product
+              </h2>
+            </div>
+            <p class="features__text">
+              The rise of mobile devices transforms the way we consume.
+              <br>
+              elevant channels such as Facebook.
+            </p>
+
+            <div class="testimonial__review example">
+              <div class="testimonial__review-stars"></div>
+
+              <p class="testimonial__review-title">
+                User friendly & Customizable
+              </p>
+
+              <p class="features__text">
+                Bring to the table win-win survival strategies to ensure proactive dom-
+                <br>
+                ination. At the end of the day, going forward, a new normal that has
+                <br>
+                evolved from generation X is on the runway heading towards a
+                <br>
+                streamlined cloud solution. User generated content in real-time will
+                <br>
+                have multiple touchpoints for offshoring.
+              </p>
+
+              <div class="testimonial__review-client">
+                <div class="testimonial__review-client--img">
+                  <img src="images/customer1.webp" alt="customer1">
+                </div>
+                <div class="testimonial__review-client--about">
+                  <p class="testimonial__review-client--name">
+                    Zoltan Nemeth
+                  </p>
+                  <p class="testimonial__review-client--position">
+                    CEO of Pixler Lab
+                  </p>
+                </div>
+                <div class="testimonial__review-arrow">
+                  <div class="testimonial__review-arrow--left">
+                    <img src="images/left.webp" alt="arrow-left">
+                  </div>
+                  <div class="testimonial__review-arrow--divide"></div>
+                  <div class="testimonial__review-arrow--right">
+                    <img src="images/rigth.webp" alt="testimonial__review-arrow--right">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
 
       <section id="faq" class="section__faq">
-        <!-- <div class="section__faq--container">
-          <img
-            src="images/FAQ.png"
-            alt="jackpots--img"
-            class="section__faq--img"
-          >
-        </div> -->
+        <div class="faq__top">
+          <div data-aos="zoom-in">
+            <h2 class="features__title faq__title">Frequently asked questions
+            </h2>
+          </div>
+
+          <p class="features__text faq__text">
+            The rise of mobile devices transforms the way we consume information entirely
+            <br>
+            and the world's most elevant channels such as Facebook.
+          </p>
+        </div>
+        <div class="container">
+          <label for="chk-1">
+            <input
+              id="chk-1"
+              type="checkbox"
+              checked
+            >
+            <div class="faq__main-title title">
+              How to contact with riders emergency?
+              <div class="plus">
+                <img src="images/Plus.webp" alt="plus">
+              </div>
+            </div>
+            <p class="faq__main-text content">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+              <br>
+              approaches to corporate strategy foster collaborative thinking to further the overall value proposi-
+              <br>
+              tion. Organically grow the holistic world view of disruptive innovation via workplace diversity and
+              <br>
+              empowerment.
+            </p>
+          </label>
+
+          <label for="chk-2">
+            <input
+              id="chk-2"
+              type="checkbox"
+            >
+            <div class="faq__main-title title">
+              App installation failed, how to update system information?
+              <div class="plus">
+                <img src="images/Plus.webp" alt="plus">
+              </div>
+            </div>
+            <p class="faq__main-text content">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+              <br>
+              approaches to corporate strategy foster collaborative thinking to further the overall value proposi-
+              <br>
+              tion. Organically grow the holistic world view of disruptive innovation via workplace diversity and
+              <br>
+              empowerment.
+            </p>
+          </label>
+
+          <label for="chk-3">
+            <input
+              id="chk-3"
+              type="checkbox"
+            >
+            <div class="faq__main-title title">
+              Website reponse taking time, how to improve?
+              <div class="plus">
+                <img src="images/Plus.webp" alt="plus">
+              </div>
+            </div>
+            <p class="faq__main-text content">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+              <br>
+              approaches to corporate strategy foster collaborative thinking to further the overall value proposi-
+              <br>
+              tion. Organically grow the holistic world view of disruptive innovation via workplace diversity and
+              <br>
+              empowerment.
+            </p>
+          </label>
+
+          <label for="chk-4">
+            <input
+              id="chk-4"
+              type="checkbox"
+            >
+            <div class="faq__main-title title">
+              New update fixed all bug and issues
+              <div class="plus">
+                <img src="images/Plus.webp" alt="plus">
+              </div>
+            </div>
+            <p class="faq__main-text content">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+              <br>
+              approaches to corporate strategy foster collaborative thinking to further the overall value proposi-
+              <br>
+              tion. Organically grow the holistic world view of disruptive innovation via workplace diversity and
+              <br>
+              empowerment.
+            </p>
+          </label>
+
+          <label for="chk-5">
+            <input
+              id="chk-5"
+              type="checkbox"
+            >
+            <div class="faq__main-title title">
+              How to contact with riders emergency?
+              <div class="plus">
+                <img src="images/Plus.webp" alt="plus">
+              </div>
+            </div>
+            <p class="faq__main-text content">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+              <br>
+              approaches to corporate strategy foster collaborative thinking to further the overall value proposi-
+              <br>
+              tion. Organically grow the holistic world view of disruptive innovation via workplace diversity and
+              <br>
+              empowerment.
+            </p>
+          </label>
+        </div>
+
+        </faq__main>
+
+        <hr>
       </section>
 
       <section id="try" class="section__try">
-        <!-- <div class="section__try--container">
-          <img
-            src="images/try.png"
-            alt="jackpots--img"
-            class="section__try--img"
-          >
-        </div> -->
+        <div class="try">
+
+          <div class="try__explain">
+            <div data-aos="zoom-in">
+              <h2 class="features__title">Download our App now !
+              </h2>
+            </div>
+            <p class="features__text">
+              The rise of mobile devices transforms the way we consume.
+              <br>
+              elevant channels such as Facebook.
+            </p>
+            <div class="try__download">
+              <a href="https://play.google.com/store/apps?hl=uk" class="try__download-img">
+                <img src="./images/google_play.webp" alt="google_play">
+              </a>
+              <a href="https://www.apple.com/ua/app-store/" class="try__download-img">
+                <img src="./images/app_store.webp" alt="app_store">
+              </a>
+            </div>
+          </div>
+          <div class="try__img">
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <!-- <div class="footer--container">
-        <img
-          src="images/Footer.png"
-          alt="jackpots--img"
-          class="footer--img"
-        >
-      </div> -->
+      <div class="footer__container">
+        <a href="#" class="logo">
+          <img
+            src="images/AppLab_footer.webp"
+            alt="AppLab logo"
+            class="logo__image footer__lab"
+          >
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link footer__nav">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#key-features" class="nav__link footer__nav">Key Features</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link footer__nav">Pricing</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#testiminial" class="nav__link footer__nav">Testiminial</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#faq" class="nav__link footer__nav">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/" class="media">
+            <img
+              src="images/social.png"
+              alt="media"
+            >
+          </a>
+        </div>
+        <div class="footer__rights">
+          Copyright© Arifur Rahman Tushar 2019. All rights reserved
+        </div>
+      </div>
+
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
-    <script>
-      AOS.init();
-    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
   </body>
 </html>

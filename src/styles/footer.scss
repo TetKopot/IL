@@ -1,17 +1,23 @@
 .footer {
-  margin: 0;
+  padding-top: 80px;
+  background-color: #09142e;
 
-  &--container {
+  &__container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
-    height: auto;
   }
 
-  &--img {
-    height: auto;
-    width: 100%;
-    object-fit: fill;
+  &__nav {
+    color: white;
+    padding: 10px;
+  }
+
+  &__rights {
+    margin: 70px auto;
+    font-size: 14px;
+    font-family: "Poppins";
+    color: rgba(255, 255, 255, 0.212);
   }
 }
-
-
